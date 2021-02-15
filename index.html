@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-dark.css">
   </head>
   <body>
     <div class="wrapper">
@@ -29,6 +30,17 @@
         </div>
       </div>
     </div>
+    <a onclick="darkMode()"><img src="assets/moon.png" alt="darkmode" class="dm-moon"></a>
+
+    <script>
+      function darkMode() {
+        if(document.body.id === "dark"){
+          document.body.id = "";
+        }else{
+          document.body.id = "dark";
+        }
+      }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

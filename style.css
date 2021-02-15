@@ -118,6 +118,15 @@ button[disabled] {
   overflow: hidden;
 }
 
+.dm-moon{
+  position: fixed;
+  left: 24px;
+  top: 24px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;

@@ -118,12 +118,13 @@ button[disabled] {
   overflow: hidden;
 }
 
-.dm-moon{
+.dm-moon {
   position: fixed;
-  left: 24px;
   top: 24px;
+  right: 24px;
   width: 64px;
   border-radius: 50%;
+  z-index: 1;
 }
 
 
@@ -137,10 +138,20 @@ button[disabled] {
   #password {
     font-size: 1rem;
   }
+
+  .dm-moon {
+    width: 48px;
+  }
 }
 
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+
+  .dm-moon {
+    width: 32px;
+    top: 16px;
+    right: 16px;
   }
 }
